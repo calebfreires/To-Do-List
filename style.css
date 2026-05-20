@@ -174,6 +174,97 @@ body {
   display: none;
 }
 
+@media (max-width: 640px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 28px 24px;
+    border-radius: 26px;
+  }
+
+  .container::before {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+  }
+
+  .new-task-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .new-task-button {
+    width: 100%;
+    padding: 14px 18px;
+  }
+
+  .tasks-container {
+    padding: 16px;
+  }
+
+  .task-item {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .task-item i {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 24px 18px;
+    border-radius: 22px;
+  }
+
+  .new-task-input {
+    padding: 14px 16px;
+    font-size: 0.95rem;
+  }
+
+  .new-task-button {
+    font-size: 0.95rem;
+    padding: 14px 16px;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+  }
+
+  .task-item p {
+    font-size: 0.94rem;
+    line-height: 1.4;
+  }
+
+  .task-item i {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  body {
+    padding: 14px;
+  }
+
+  .container {
+    padding: 20px 16px;
+  }
+
+  .new-task-input,
+  .new-task-button {
+    border-radius: 20px;
+  }
+
+  .new-task-button {
+    padding: 12px 14px;
+  }
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
