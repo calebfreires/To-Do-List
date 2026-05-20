@@ -79,7 +79,7 @@ const updateLocalStorage = () => {
 }
 
 const refreshTasksUsingLocalStorage = () => {
-  const tasksFromLocalStorage = JSON.parse(localStorage.getItem('tasks'));
+  const tasksFromLocalStorage = JSON.parse(localStorage.getItem('tasks')) || [];
 
   for (const task of tasksFromLocalStorage) {
     const taskItemContainer = document.createElement('div');
